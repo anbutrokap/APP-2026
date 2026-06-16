@@ -45,10 +45,24 @@
       color: #000;
       border-color: #999;
     }
+
+    body.light-mode .btn1 {
+      background: #aed1e8; 
+      color: #222;
+      border: 1px solid #bbb;
+    }
+    body.light-mode .btn1:hover {
+      background: #cfd3d6;
+      color: #000;
+      border-color: #999;
+    }
+
+
     body.light-mode footer { background: #c3c8cb; color: #333; }
     body.light-mode .section-label {
       color: #555;
       border-top-color: #bbb;
+      border-bottom-color: #bbb;
     }
 
     /* Layout */
@@ -132,16 +146,44 @@
       border-color: #3a3a3a;
     }
 
+    .btn1 {
+      display: block;
+      width: 100%;
+      padding: 18px clamp(24px, 10vw, 120px);
+      text-align: center;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 400;
+      background: #012224;
+      color: #9e9e9e;
+      border: 1px solid #2a2a2a;
+      border-radius: 50px;
+      transition: background .25s ease, transform .25s ease, border-color .25s ease, color .25s ease;
+    }
+    .btn1:hover {
+      background: #2a2a2a;
+      transform: translateY(-2px);
+      color: #eaeaea;
+      border-color: #3a3a3a;
+    }
+
+
+
+
     /* Section label pemisah */
     .section-label {
       width: 100%;
       text-align: center;
-      font-size: 1rem;
-      font-weight: 400;
+      font-size: rem;
+      font-weight: bold;
       color: #9e9e9e;
       border-top: 1px solid #2a2a2a;
       padding-top: 10px;
       margin-top: 2px;
+
+      border-bottom: 1px solid #2a2a2a;
+      padding-bottom: 10px;
+      margin-bottom: 2px;
       font-family: "Segoe UI", Roboto, Arial, sans-serif;
       letter-spacing: 0.01em;
     }
@@ -198,13 +240,13 @@
 
     <section>
       <div class="btn-group">
-        <a href="https://drive.google.com/drive/u/1/folders/1wHN9CK7hgQOffMfKGV2E1OGTweJ71V5N" class="btn">Size Chart PDL</a>
+        <a href="https://drive.google.com/drive/u/1/folders/1wHN9CK7hgQOffMfKGV2E1OGTweJ71V5N" class="btn1">Size Chart PDL</a>
         <a href="https://docs.google.com/spreadsheets/d/1rqiyp0lhL1gtgW3knkfQFJaeahWYGUGPPOYcK9Is6gs/edit?gid=848198304#gid=848198304" class="btn">JAM Intelijen</a>
-        <a href="https://docs.google.com/spreadsheets/d/1rqiyp0lhL1gtgW3knkfQFJaeahWYGUGPPOYcK9Is6gs/edit?gid=361289247#gid=361289247" class="btn">JAM Pidana Umum</a>
-        <a href="https://docs.google.com/spreadsheets/d/1rqiyp0lhL1gtgW3knkfQFJaeahWYGUGPPOYcK9Is6gs/edit?gid=1009820739#gid=1009820739" class="btn">JAM Pidana Khusus</a>
+        <a href="https://docs.google.com/spreadsheets/d/1rqiyp0lhL1gtgW3knkfQFJaeahWYGUGPPOYcK9Is6gs/edit?gid=361289247#gid=361289247" class="btn">JAM Tindak Pidana Umum</a>
+        <a href="https://docs.google.com/spreadsheets/d/1rqiyp0lhL1gtgW3knkfQFJaeahWYGUGPPOYcK9Is6gs/edit?gid=1009820739#gid=1009820739" class="btn">JAM Tindak Pidana Khusus</a>
         <a href="https://docs.google.com/spreadsheets/d/1rqiyp0lhL1gtgW3knkfQFJaeahWYGUGPPOYcK9Is6gs/edit?gid=332470053#gid=332470053" class="btn">JAM Perdata dan TUN</a>
         <a href="https://docs.google.com/spreadsheets/d/1rqiyp0lhL1gtgW3knkfQFJaeahWYGUGPPOYcK9Is6gs/edit?gid=751007337#gid=751007337" class="btn">JAM Pengawasan</a>
-        <a href="https://docs.google.com/spreadsheets/d/1rqiyp0lhL1gtgW3knkfQFJaeahWYGUGPPOYcK9Is6gs/edit?gid=1578326693#gid=1578326693" class="btn">JAM Pidana Militer</a>
+        <a href="https://docs.google.com/spreadsheets/d/1rqiyp0lhL1gtgW3knkfQFJaeahWYGUGPPOYcK9Is6gs/edit?gid=1578326693#gid=1578326693" class="btn">JAM Tindak Pidana Militer</a>
         <a href="https://docs.google.com/spreadsheets/d/1rqiyp0lhL1gtgW3knkfQFJaeahWYGUGPPOYcK9Is6gs/edit?gid=1134108482#gid=1134108482" class="btn">Badan Diklat Kejaksaan RI</a>
         <a href="https://docs.google.com/spreadsheets/d/1rqiyp0lhL1gtgW3knkfQFJaeahWYGUGPPOYcK9Is6gs/edit?gid=445456741#gid=445456741" class="btn">Badan Pemulihan Aset</a>
 
@@ -219,6 +261,7 @@
         <a href="https://docs.google.com/spreadsheets/d/1rqiyp0lhL1gtgW3knkfQFJaeahWYGUGPPOYcK9Is6gs/edit?gid=24411432#gid=24411432" class="btn">Biro Hukum dan Hub Luar Negeri</a>
         <a href="https://docs.google.com/spreadsheets/d/1rqiyp0lhL1gtgW3knkfQFJaeahWYGUGPPOYcK9Is6gs/edit?gid=1348432300#gid=1348432300" class="btn">Pusat Daskrimti</a>
         <a href="https://docs.google.com/spreadsheets/d/1rqiyp0lhL1gtgW3knkfQFJaeahWYGUGPPOYcK9Is6gs/edit?gid=708771298#gid=708771298" class="btn">Pusat Kesehatan Yustisial</a>
+        <a href="https://docs.google.com/spreadsheets/d/1rqiyp0lhL1gtgW3knkfQFJaeahWYGUGPPOYcK9Is6gs/edit?gid=708771298#gid=708771298" class="btn">Pegawai Dikaryakan</a>
       </div>
     </section>
   </main>
