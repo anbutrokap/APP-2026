@@ -1,6 +1,14 @@
 // Dibuat otomatis oleh update.py dari keterangan.xlsx — jangan diedit manual.
 // KETERANGAN[kode] = [alias, keterangan]
 const KETERANGAN = {
+ "1010309001": [
+  "Materai",
+  "Persediaan berupa materai yang digunakan untuk mendukung kerja kejaksaan"
+ ],
+ "1010313001": [
+  "BBM, bensin, solar",
+  "Persediaan berupa bahan bakar yang digunakan untuk mendukung tusi Kejaksaan"
+ ],
  "1010501002": [
   "Rampasan Tanah, Bangunan, Rumah",
   "Persediaan rampasan berupa tanah dan bangunan seperti rumah, sawah, apartemen, ruko, dan pasar."
@@ -178,7 +186,7 @@ const KETERANGAN = {
   "Kode barang ini umumnya digunakan untuk penerimaan hibah / belanja berupa renovasi pada gedung dan bangunan seperti renovasi gedung, aula, rumah negara dll"
  ],
  "7010101003": [
-  "renovasi gedung menggunakan termin",
-  "Aset berupa gedung dan bangunan yang sedang dalam proses pembangunan dan belum selesai pada tanggal pelaporan keuangan. KDP mencakup biaya yang telah dikeluarkan untuk kegiatan pembangunan, seperti biaya perencanaan, konstruksi, dan pengawasan, hingga aset siap digunakan sesuai dengan tujuan perolehannya."
+  "renovasi Gedung /  Bangunan dalam termin",
+  "Berupa gedung dan bangunan yang sedang dalam proses pembangunan dan belum selesai pada tanggal pelaporan keuangan. KDP mencakup biaya yang telah dikeluarkan untuk kegiatan pembangunan, seperti biaya perencanaan, konstruksi, dan pengawasan, hingga aset siap digunakan sesuai dengan tujuan perolehannya."
  ]
 };
